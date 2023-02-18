@@ -12,8 +12,8 @@ export default function Meme() {
     setMemes(memesArray[randomNumber].url);
   }
   return (
-    <main>
-      <div className="form">
+    <main className="p-9">
+      <div className="grid grid-cols-2 gap-4">
         <input
           type="text"
           onChange={(e) => setTopText(e.target.value)}
@@ -28,7 +28,10 @@ export default function Meme() {
           placeholder="Bottom text"
           className="form--input"
         />
-        <button className="form--button" onClick={() => setMemesFunc()}>
+        <button
+          className="w-full col-span-2 bg-gradient-to-r from-fuchsia-800 to-fuchsia-600 text-white py-2"
+          onClick={() => setMemesFunc()}
+        >
           Get a new meme image 🖼
         </button>
       </div>
