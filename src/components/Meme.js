@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import memesData from "../memesData.js";
 
-export default function Meme() {
+const Meme = () => {
   const [memes, setMemes] = useState();
   const [topText, setTopText] = useState();
   const [downText, setDownText] = useState();
@@ -48,4 +48,6 @@ export default function Meme() {
       )}
     </main>
   );
-}
+};
+
+export default Meme;

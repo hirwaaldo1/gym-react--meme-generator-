@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function Header() {
+const Header = () => {
   return (
     <header className="flex items-center justify-between h-16 bg-gradient-to-r from-fuchsia-800 to-fuchsia-600 text-white p-5">
       <div className="flex items-center">
@@ -14,4 +14,6 @@ export default function Header() {
       <h4 className="text-xs">React Course - Project 3</h4>
     </header>
   );
-}
+};
+
+export default Header;
